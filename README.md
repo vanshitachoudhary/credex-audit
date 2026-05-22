@@ -1,36 +1,113 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# AI Spend Audit Tool 🚀
 
-## Getting Started
+A free web app that helps startups and developers identify overspending across AI tools like ChatGPT, Cursor, GitHub Copilot, and others.
 
-First, run the development server:
+It analyzes your AI stack and suggests cost optimizations with estimated monthly and yearly savings.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+---
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🔗 Live Demo
+https://your-deployment-link.com
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 📌 Problem Statement
 
-## Learn More
+Most startups and developers use multiple AI tools but have:
+- No visibility into total AI spend
+- No benchmark for correct pricing plans
+- No awareness of cheaper alternatives
 
-To learn more about Next.js, take a look at the following resources:
+As a result, teams often overpay for unused or inefficient plans.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 💡 Solution
 
-## Deploy on Vercel
+AI Spend Audit Tool allows users to:
+- Add their AI tools, plans, seats, and monthly spend
+- Run an instant cost optimization audit
+- See where they are overpaying
+- Get actionable recommendations
+- View total monthly + yearly savings
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## ⚙️ Features
+
+- Add multiple AI tools (ChatGPT, Cursor, Copilot, etc.)
+- Real-time audit engine
+- Cost optimization logic based on pricing benchmarks
+- Breakdown of savings per tool
+- Total savings summary
+- Shareable result-ready UI (designed for virality)
+
+---
+
+## 🧠 Tech Stack
+
+- Next.js (App Router)
+- React
+- TypeScript
+- Tailwind / Custom CSS
+- Node.js (logic layer)
+
+---
+
+## 🏗️ How It Works
+
+1. User inputs AI tools + plans + spend
+2. Audit engine compares against baseline pricing
+3. System calculates:
+   - Overpayment
+   - Optimized spend
+   - Savings potential
+4. Results are displayed in a clean dashboard
+
+---
+
+## 🧩 Key Decisions
+
+- Used rule-based audit engine instead of AI for core logic (ensures accuracy)
+- Kept UI minimal to focus on clarity of financial insights
+- Prioritized speed and instant feedback over complex workflows
+- Designed shareable result format for viral distribution
+- Stored logic separately from UI for maintainability
+
+---
+
+## 📊 Example Output
+
+- Current Spend: $120/month  
+- Optimized Spend: $60/month  
+- Savings: $60/month (~50%)
+
+---
+
+## 🚀 Future Improvements
+
+- Add real-time pricing API integration
+- Expand AI tools database
+- Add user accounts and history
+- PDF export of audit reports
+- Benchmarking vs similar companies
+
+---
+
+## 📂 Project Structure
+
+- `/app` → Frontend UI
+- `/lib/auditEngine.ts` → Core audit logic
+- `/components` → UI components (if any)
+
+---
+
+## 🧪 Status
+
+MVP Complete — functional end-to-end audit flow working.
+
+---
+
+## 👨‍💻 Author
+
+Built as part of Credex Web Development Internship Assignment.
