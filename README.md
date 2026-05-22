@@ -1,113 +1,165 @@
 # AI Spend Audit Tool 🚀
 
-A free web app that helps startups and developers identify overspending across AI tools like ChatGPT, Cursor, GitHub Copilot, and others.
+A modern SaaS-style web application that helps startups and developers identify unnecessary spending across AI tools like ChatGPT, Cursor, GitHub Copilot, Claude, Gemini, and more.
 
-It analyzes your AI stack and suggests cost optimizations with estimated monthly and yearly savings.
+The platform analyzes AI tooling usage, seat allocation, and subscription plans to uncover cost optimization opportunities with estimated monthly and yearly savings.
 
 ---
 
 ## 🔗 Live Demo
-https://your-deployment-link.com
+
+https://credex-lime.vercel.app/
 
 ---
 
 ## 📌 Problem Statement
 
-Most startups and developers use multiple AI tools but have:
-- No visibility into total AI spend
-- No benchmark for correct pricing plans
-- No awareness of cheaper alternatives
+AI tooling adoption inside startups is increasing rapidly, but visibility into tooling ROI remains fragmented.
 
-As a result, teams often overpay for unused or inefficient plans.
+Most teams use multiple AI tools simultaneously but often have:
+- No centralized visibility into AI spend
+- Overlapping subscriptions across workflows
+- Unused premium plans
+- Underutilized seats
+- No benchmark for efficient pricing
+
+As a result, organizations frequently overspend on AI infrastructure without realizing it.
 
 ---
 
 ## 💡 Solution
 
-AI Spend Audit Tool allows users to:
-- Add their AI tools, plans, seats, and monthly spend
-- Run an instant cost optimization audit
-- See where they are overpaying
-- Get actionable recommendations
-- View total monthly + yearly savings
+AI Spend Audit Tool provides a lightweight AI infrastructure cost analysis system.
+
+Users can:
+- Add AI tools, plans, seats, and spend
+- Run an instant audit of their AI stack
+- Identify overpayment and inefficiencies
+- Receive optimization recommendations
+- Analyze monthly and yearly savings opportunities
+- Review spend breakdowns in a clean dashboard
 
 ---
 
 ## ⚙️ Features
 
-- Add multiple AI tools (ChatGPT, Cursor, Copilot, etc.)
-- Real-time audit engine
-- Cost optimization logic based on pricing benchmarks
-- Breakdown of savings per tool
-- Total savings summary
-- Shareable result-ready UI (designed for virality)
+- Multi-tool AI stack auditing
+- Real-time spend analysis
+- Cost optimization recommendations
+- Savings breakdown by tool
+- AI-generated audit summaries
+- Industry benchmark insights
+- Spend visualization dashboard
+- Premium SaaS-style responsive UI
+- Shareable audit-ready reporting experience
 
 ---
 
-## 🧠 Tech Stack
+## 🧠 Product Thinking
 
-- Next.js (App Router)
-- React
-- TypeScript
-- Tailwind / Custom CSS
-- Node.js (logic layer)
+This project was designed around a simple insight:
+
+> AI adoption is scaling faster than operational visibility into tooling efficiency.
+
+The objective was not just building another dashboard, but creating a lightweight decision-support system for AI infrastructure cost management.
+
+The platform helps organizations:
+- identify overlapping subscriptions
+- reduce unnecessary premium plans
+- optimize seat allocation
+- benchmark AI tooling costs
+- improve operational efficiency
+
+Key product decisions:
+- Rule-based audit engine for transparent recommendations
+- Instant analysis without onboarding friction
+- Minimal workflow complexity for faster adoption
+- Shareable audit format for stakeholder reporting
+- Clear financial visibility over feature-heavy analytics
 
 ---
 
-## 🏗️ How It Works
+## 🧠 Audit Engine Logic
 
-1. User inputs AI tools + plans + spend
-2. Audit engine compares against baseline pricing
-3. System calculates:
-   - Overpayment
-   - Optimized spend
-   - Savings potential
-4. Results are displayed in a clean dashboard
+The audit engine evaluates:
+- pricing plans
+- monthly spend
+- number of seats
+- workflow overlap
+- potential consolidation opportunities
+
+The system calculates:
+- Current Spend
+- Optimized Spend
+- Monthly Savings
+- Estimated Yearly Savings
+
+Example optimization logic:
+- Detect duplicate premium subscriptions
+- Recommend cheaper alternatives
+- Suggest seat consolidation opportunities
+- Identify inefficient tool combinations
 
 ---
 
-## 🧩 Key Decisions
+## 🏗️ System Workflow
 
-- Used rule-based audit engine instead of AI for core logic (ensures accuracy)
-- Kept UI minimal to focus on clarity of financial insights
-- Prioritized speed and instant feedback over complex workflows
-- Designed shareable result format for viral distribution
-- Stored logic separately from UI for maintainability
+1. User inputs AI tools + pricing plans
+2. Audit engine evaluates spend patterns
+3. System compares against optimization rules
+4. Savings opportunities are calculated
+5. Results are displayed in a dashboard
+6. AI-generated summaries explain findings
 
 ---
 
 ## 📊 Example Output
 
-- Current Spend: $120/month  
-- Optimized Spend: $60/month  
-- Savings: $60/month (~50%)
+| Metric | Value |
+|---|---|
+| Current Spend | $120/month |
+| Optimized Spend | $65/month |
+| Estimated Savings | $55/month |
+| Estimated Yearly Savings | $660/year |
 
 ---
 
-## 🚀 Future Improvements
+## 🧩 Technical Decisions
 
-- Add real-time pricing API integration
-- Expand AI tools database
-- Add user accounts and history
-- PDF export of audit reports
-- Benchmarking vs similar companies
+### Frontend
+- Built using Next.js App Router
+- TypeScript for maintainability
+- Tailwind CSS for rapid UI iteration
+- Responsive dashboard-first layout
+
+### Product Design
+- Focused on clarity over complexity
+- Designed premium SaaS-style UX
+- Prioritized fast interactions and readability
+- Built lightweight MVP architecture for scalability
+
+### Architecture
+- Audit logic separated from UI layer
+- Modular tool-based analysis system
+- Easily extendable recommendation engine
+
+---
+
+## 🧠 Tech Stack
+
+- Next.js
+- React
+- TypeScript
+- Tailwind CSS
+- Node.js
 
 ---
 
 ## 📂 Project Structure
 
-- `/app` → Frontend UI
-- `/lib/auditEngine.ts` → Core audit logic
-- `/components` → UI components (if any)
-
----
-
-## 🧪 Status
-
-MVP Complete — functional end-to-end audit flow working.
-
----
-
-## 👨‍💻 Author
-
-Built as part of Credex Web Development Internship Assignment.
+```bash
+/app                  → Frontend pages
+/components           → Reusable UI components
+/lib/auditEngine.ts   → Audit logic engine
+/public               → Static assets
+/styles               → Styling
